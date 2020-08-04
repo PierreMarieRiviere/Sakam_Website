@@ -1,6 +1,6 @@
 import React from "react"
 import { useEffect } from "react"
-// import sections
+// sections
 import Hero from "../components/sections/Hero"
 import FeaturesTiles from "../components/sections/FeaturesTiles"
 import FeaturesSplit from "../components/sections/FeaturesSplit"
