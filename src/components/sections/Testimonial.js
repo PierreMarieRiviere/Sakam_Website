@@ -1,15 +1,6 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-
-const propTypes = {
-  ...SectionTilesProps.types
-}
-
-const defaultProps = {
-  ...SectionTilesProps.defaults
-}
+import React from "react"
+import classNames from "classnames"
+import SectionHeader from "./partials/SectionHeader"
 
 const Testimonial = ({
   className,
@@ -22,54 +13,59 @@ const Testimonial = ({
   pushLeft,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'testimonial section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "testimonial section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
-  );
+  )
 
   const innerClasses = classNames(
-    'testimonial-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
-  );
+    "testimonial-inner section-inner",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
+  )
 
-  const tilesClasses = classNames(
-    'tiles-wrap',
-    pushLeft && 'push-left'
-  );
+  const tilesClasses = classNames("tiles-wrap", pushLeft && "push-left")
 
   const sectionHeader = {
-    title: 'Customer testimonials',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
-  };
+    title: "We work with the best lenders in Cambodia",
+    paragraph:
+      "Sakam is open to best-in-class registered lenders. We are 100% independent and not affiliated to any bank in particular. Same pricing and opportunities for everyone!",
+  }
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-
-            <div className="tiles-item reveal-from-right" data-reveal-delay="200">
+            <div
+              className="tiles-item reveal-from-right"
+              data-reveal-delay="200"
+            >
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
+                    AMK got in touch with 1,000s loan seekers through Sakam app,
+                    and it works as a complementary tool to our own smartphone
+                    app
+                  </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Roman Level</span>
+                  <span className="testimonial-item-name text-color-high">
+                    Ear Buncheng, CBO
+                  </span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
+                    <a
+                      href="https://www.amkcambodia.com/index.html"
+                      target="_blank"
+                    >
+                      AMK
+                    </a>
                   </span>
                 </div>
               </div>
@@ -79,44 +75,55 @@ const Testimonial = ({
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
+                    Sakam helped us get a better grasp on market demand. As a
+                    manager, I can get first hand information on lending demand
+                    to complement our ground staffs feedbacks
+                  </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Diana Rynzhuk</span>
+                  <span className="testimonial-item-name text-color-high">
+                    Christine Guyard, Lending Digitization Director
+                  </span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
+                    <a href="https://amret.com.kh/" target="_blank">
+                      Amret
+                    </a>
                   </span>
                 </div>
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-left" data-reveal-delay="200">
+            <div
+              className="tiles-item reveal-from-left"
+              data-reveal-delay="200"
+            >
               <div className="tiles-item-inner">
                 <div className="testimonial-item-content">
                   <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
+                    If it helps financial inclusion, it helps us! Sakam has the
+                    potential to streamline microfinance processes and direct
+                    more unbanked citizens towards legit lenders
+                  </p>
                 </div>
                 <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Ben Stafford</span>
+                  <span className="testimonial-item-name text-color-high">
+                    Yannick Milev, CEO
+                  </span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
+                    <a href="https://www.chamroeun.com/" target="_blank">
+                      Chamroeun
+                    </a>
                   </span>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-Testimonial.propTypes = propTypes;
-Testimonial.defaultProps = defaultProps;
-
-export default Testimonial;
+export default Testimonial
