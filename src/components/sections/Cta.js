@@ -206,7 +206,7 @@ const Cta = ({
         <div className={innerClasses}>
           <div className="cta-slogan">
             <h3 className="m-0">
-              Check now if you're is eligible to a Sakam account!
+              Check now if your company is eligible to a Sakam account!
             </h3>
           </div>
           <div className="cta-action">
