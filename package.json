@@ -18,7 +18,7 @@
     "react-ga": "^2.7.0",
     "react-pdf": "^4.2.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^5.0.1",
     "react-sizeme": "^2.6.12"
   },
   "scripts": {
